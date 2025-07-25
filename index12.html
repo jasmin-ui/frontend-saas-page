@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaaS Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">MySaaS</h1>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Home</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Features</a>
+        <a href="#" class="text-gray-600 hover:text-indigo-600">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4">
+    <h2 class="text-4xl font-bold mb-4">Grow Your Business with MySaaS</h2>
+    <p class="text-lg mb-8 max-w-xl mx-auto">
+      Powerful features. Simple pricing. Sign up now and take your workflow to the next level.
+    </p>
+    <a href="#signup" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
+      Get Started
+    </a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Fast Integration</h3>
+        <p>Connect quickly with tools you already use.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Smart Dashboard</h3>
+        <p>Track your business performance in real-time.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Secure Data</h3>
+        <p>Your data is encrypted and stored safely.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sign-Up Form -->
+  <section id="signup" class="bg-gray-100 py-20 px-4">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow">
+      <h2 class="text-2xl font-bold mb-6 text-center">Sign Up for Early Access</h2>
+      <form id="signupForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          class="w-full mb-4 p-3 border rounded"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          class="w-full mb-4 p-3 border rounded"
+          required
+        />
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition"
+        >
+          Sign Up
+        </button>
+        <p id="message" class="text-center mt-4 text-green-600 hidden">Thank you! We'll contact you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 text-center text-gray-600 text-sm">
+    &copy; 2025 MySaaS. All rights reserved.
+  </footer>
+
+<script src="script5.js"></script>
+</body>
+</html>
